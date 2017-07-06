@@ -1,0 +1,16 @@
+{
+    "name": "luojixinhao/CodeIgniter-ai"
+    ,"type": "library"
+    ,"description": "CodeIgniter自动加载"
+    ,"keywords": ["CI自动加载类"]
+    ,"homepage": "https://github.com/luojixinhao/CodeIgniter-ai"
+    ,"license": "MIT"
+    ,"authors": [
+        {
+            "name": "Jason Luo"
+            ,"email": "lx_2010@qq.com"
+	    ,"homepage": "http://www.9window.com"
+            ,"role": "Developer"
+        }
+    ]
+}
