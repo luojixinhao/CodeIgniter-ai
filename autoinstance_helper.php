@@ -86,7 +86,7 @@ class ai {
 		$name = $pc[2];
 		if (!isset($CI->$name)) {
 			$path = empty($pc[0]) ? '' : $pc[0] . '/';
-			$class = 'M_' . $pc[1] . '_model';
+			$class = '' . $pc[1] . '';
 			$CI->load->model($path . $class, $name);
 		}
 
@@ -121,6 +121,17 @@ class ai {
 		}
 
 		return $CI->$name;
+	}
+
+	/**
+	 * 动态载入core文件
+	 * 用法：ai::core('Utf8')->method()
+	 * @param string $class
+	 * @param string $args
+	 */
+	public static function core($class, $args = NULL) {
+		$core = & load_class($class, 'core', $args);
+		return $core;
 	}
 
 	/**
