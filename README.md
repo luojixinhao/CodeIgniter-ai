@@ -25,7 +25,7 @@ CI动态加载类
 
 #### ai::model() ####
 
-    # ai::model('name')->method(); //载入“models/M_name_model.php”文件并调用“method”方法
+    # ai::model('name')->method(); //载入“models/name.php”文件并调用“method”方法
 
 #### ai::lib() ####
 
